@@ -1,0 +1,16 @@
+.cheese {
+    width: 0px;
+    height: 0px;
+    border-right: 270px solid transparent;
+    border-top-left-radius: 280px;
+    border-top-right-radius: 270px;
+    border-bottom-left-radius: 270px;
+    border-bottom-right-radius: 280px;
+    position: absolute;
+    margin: 30px;
+    transform: rotate(-20deg);
+    border-top: 270px solid #ffe357;
+    border-left: 270px solid #ffe357;
+    border-bottom: 270px solid #ffe357;
+    
+  }

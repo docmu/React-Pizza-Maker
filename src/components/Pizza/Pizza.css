@@ -1,0 +1,17 @@
+#fuente {
+  position: absolute;
+  top: 10px;
+}
+.pizza-base {
+  width: 600px;
+  height: 600px;
+  border-radius: 500px;
+  background: #e09b31;
+  position: relative;
+  left: 0px;
+}
+
+h1{
+  width: 600px;
+  text-align: center;
+}
