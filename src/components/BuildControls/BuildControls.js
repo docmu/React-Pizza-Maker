@@ -3,13 +3,14 @@ import classes from "./BuildControls.module.css";
 import BuildControl from "./BuildControl/BuildControl";
 
 const controls = [
-    { label: "Red Sauce", type: "red" },
-    { label: "White Sauce", type: "white" },
-    { label: "Cheese", type: "cheese" },
-    { label: "Pepperoni", type: "pepperoni" },
-    { label: "Mushroom", type: "mushroom" },
-    { label: "Bell Peppers", type: "bellPeppers" },
-    { label: "Sausage", type: "sausage" },
+    { label: "Red Sauce", type: "sauce", name: "red" },
+    { label: "White Sauce", type: "sauce", name: "white" },
+    { label: "Mozzarella Cheese", type: "cheese", name: "mozzarella" },
+    { label: "Cheddar Cheese", type: "cheese", name: "cheddar" },
+    { label: "Pepperoni", type: "meat", name: "pepperoni" },
+    { label: "Mushroom", type: "veggie", name: "mushroom" },
+    { label: "Bell Peppers", type: "veggie", name: "bellPeppers" },
+    { label: "Sausage", type: "meat", name: "sausage" },
 ];
 
 const buildControls = (props) => (
@@ -19,19 +20,18 @@ const buildControls = (props) => (
                 key={ctrl.label}
                 label={ctrl.label}
                 type={ctrl.type}
-                click={props.eventHandler}
-            // added={() => props.ingredientsAdded(ctrl.type)}
-            // removed={() => props.ingredientsRemoved(ctrl.type)}
+                added={() => props.ingredientsAdded(ctrl.type, ctrl.name)}
+                removed={() => props.ingredientsRemoved(ctrl.type, ctrl.name)}
             // disabled={props.disabled[ctrl.type]}
             />
         ))}
-        <button
+        {/* <button
             className={classes.OrderButton}
             disabled={!props.purchasable}
             onClick={props.ordered}
         >
             ORDER NOW
-    </button>
+        </button> */}
     </div>
 );
 

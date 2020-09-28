@@ -6,7 +6,7 @@
   width: 600px;
   height: 600px;
   border-radius: 500px;
-  background: #e09b31;
+  background: #FDE4A7;
   position: relative;
   left: 0px;
 }
@@ -14,4 +14,20 @@
 h1{
   width: 600px;
   text-align: center;
+}
+
+.red-sauce {
+  width: 0px;
+  height: 0px;
+  border-right: 280px solid transparent;
+  border-top: 280px solid red;
+  border-left: 280px solid red;
+  border-bottom: 280px solid red;
+  border-top-left-radius: 290px;
+  border-top-right-radius: 280px;
+  border-bottom-left-radius: 280px;
+  border-bottom-right-radius: 290px;
+  position: absolute;
+  margin: 20px;
+  transform: rotate(-20deg);
 }
